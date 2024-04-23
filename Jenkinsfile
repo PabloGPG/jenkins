@@ -9,11 +9,6 @@ pipeline {
             }
         }
 
-        stage('Build docker') {
-            steps {
-                sh 'docker build -t app-jenkins .'
-            }
-        }
 
         stage('Run docker') {
             steps {
